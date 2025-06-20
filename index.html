@@ -46,6 +46,10 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">SMMILE: An Expert-Driven Benchmark for Multimodal Medical In-Context Learning</h1>
+          <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 15px; align-items: center;">
+            <img src="static/images/eth.png" alt="ETH Zurich Logo" style="height: 60px;">
+            <img src="static/images/stanford-logo.png" alt="Stanford University Logo" style="height: 60px;">
+          </div>
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
             <span class="author-block">
@@ -69,7 +73,7 @@
                 <span class="author-block">
                   <a href="TENTH AUTHOR PERSONAL LINK" target="_blank">Mohamed S. Muneer</a><sup>2</sup>,</span>
                 <span class="author-block">
-                  <a href="ELEVENTH AUTHOR PERSONAL LINK" target="_blank">Jean-Benoit Delbrouck</a><sup>2†</sup>,</span>
+                  <a href="ELEVENTH AUTHOR PERSONAL LINK" target="_blank">Jean-Benoit Delbrouck</a><sup>2,8†</sup>,</span>
                 <span class="author-block">
                   <a href="TWELFTH AUTHOR PERSONAL LINK" target="_blank">Michael Moor</a><sup>1†</sup></span>
             </div>
@@ -81,7 +85,8 @@
               <span class="author-block"><sup>4</sup>Jawaharlal Institute of Postgraduate Medical Education and Research</span>
               <span class="author-block"><sup>5</sup>UCSF</span><br>
               <span class="author-block"><sup>6</sup>University of Zurich</span>
-              <span class="author-block"><sup>7</sup>University Hospital Zurich</span><br>
+              <span class="author-block"><sup>7</sup>University Hospital Zurich</span>
+              <span class="author-block"><sup>8</sup>HOPPR</span><br>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution <sup>†</sup>Co-senior authors</small></span>
             </div>
 
@@ -147,7 +152,7 @@
       <h2 class="title is-3">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-          Multimodal in-context learning (ICL) remains underexplored despite significant potential for specialized domains such as medicine. Clinicians routinely encounter diverse, specialized tasks requiring adaptation from limited examples, such as drawing insights from a few relevant prior cases or considering a constrained set of differential diagnoses. While multimodal large language models (MLLMs) have shown advances in medical visual question answering (VQA), their ability to learn multimodal tasks from context is largely unknown. We introduce SMMILE, the first expert-driven multimodal ICL benchmark for medical tasks. Eleven medical experts contributed problems, each including (1) a multimodal query and (2) multimodal in-context examples as task demonstrations. SMMILE encompasses 111 problems (517 question-image-answer triplets) covering 6 medical specialties and 13 imaging modalities. We further introduce SMMILE++, an augmented variant with 1038 permuted problems. Benchmark evaluation of 15 MLLMs reveals that most exhibit moderate to poor multimodal ICL ability in medical tasks. In open-ended evaluations, ICL contributes only 8\% average improvement over zero-shot on SMMILE and 9.4\% on SMMILE++. Analysis reveals the importance of selecting relevant in-context examples: one noisy or irrelevant example can reduce performance by up to 8 points. We identify recency bias in MLLMs, where placing the most relevant example last boosts accuracy by up to 71 points. SMMILE thus highlights critical limitations and biases in current MLLMs when learning multimodal medical tasks from context.
+          Multimodal in-context learning (ICL) remains underexplored despite significant potential for specialized domains such as medicine. Clinicians routinely encounter diverse, specialized tasks requiring adaptation from limited examples, such as drawing insights from a few relevant prior cases or considering a constrained set of differential diagnoses. While multimodal large language models (MLLMs) have shown advances in medical visual question answering (VQA), their ability to learn multimodal tasks from context is largely unknown. We introduce SMMILE, the first expert-driven multimodal ICL benchmark for medical tasks. Eleven medical experts contributed problems, each including (1) a multimodal query and (2) multimodal in-context examples as task demonstrations. SMMILE encompasses 111 problems (517 question-image-answer triplets) covering 6 medical specialties and 13 imaging modalities. We further introduce SMMILE++, an augmented variant with 1038 permuted problems. Benchmark evaluation of 15 MLLMs reveals that most exhibit moderate to poor multimodal ICL ability in medical tasks. In open-ended evaluations, ICL contributes only 8% average improvement over zero-shot on SMMILE and 9.4% on SMMILE++. Analysis reveals the importance of selecting relevant in-context examples: one noisy or irrelevant example can reduce performance by up to 8%. We identify recency bias in MLLMs, where placing the most relevant example last boosts accuracy by up to 71%. SMMILE thus highlights critical limitations and biases in current MLLMs when learning multimodal medical tasks from context.
         </p>
       </div>
     </div>
