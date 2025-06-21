@@ -161,7 +161,7 @@
 
         <div class="box">
           <h4 class="title is-5">✅ Quality Control</h4>
-          Every problem underwent rigorous manual quality control, including inspection by multiple authors, categorization, and spell-checking. This resulted in a high-quality dataset with consistent formatting and clinical accuracy. The final dataset contains 111 problems with 517 in-context learning problems.
+          Every problem underwent rigorous manual quality control, including inspection by multiple authors, categorization, and spell-checking. This resulted in a high-quality dataset with consistent formatting and clinical accuracy. The final dataset contains 111 problems with 517 in-context examples.
         </div>
 
       </div>
@@ -223,14 +223,14 @@
 
         <div class="box">
           <h4 class="title is-5">📊 Key Findings</h4>
-          <strong>Limited ICL Benefits:</strong> Most MLLMs show minimal improvement from in-context learning, with only an average 6.1-point improvement on SMMILE and 7.3 points on SMMILE++. Even the best-performing models (GPT-4o and Qwen2.5-VL-72B) achieve only around 50% accuracy in open-ended evaluations.<br><br>
+          <strong>Limited ICL Benefits:</strong> Most MLLMs show minimal improvement from in-context learning, with only an average 8% improvement on SMMILE and 9.4% on SMMILE++.<br><br>
 
           <strong>Model Performance:</strong> GPT-4o emerged as the overall leader on SMMILE, while Qwen2.5-VL-72B showed superior performance on the larger SMMILE++ dataset. Domain-specific medical models did not consistently outperform general-purpose models of similar size.
         </div>
 
         <div class="box">
           <h4 class="title is-5">⚠️ Critical Biases Identified</h4>
-          We discovered important limitations including recency bias (models heavily weight the last example, with up to 71-point accuracy differences) and sensitivity to example quality (one irrelevant example can reduce performance by up to 8 points). Models particularly struggled with numerical answers (achieving 0% accuracy), quantitative reasoning tasks, and certain imaging modalities like MRI and medical illustrations.
+          We discovered important limitations including recency bias (models heavily weight the last example, and sensitivity to example quality (one irrelevant example can reduce performance). Models particularly struggled with numerical answers (achieving 0% accuracy), quantitative reasoning tasks, and certain imaging modalities like MRI and medical illustrations.
         </div>
 
         <div class="box">
